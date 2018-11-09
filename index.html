@@ -1,0 +1,201 @@
+<!doctype html> 
+<html lang="en" class='main'> 
+    <head> 
+        <meta charset="UTF-8" />
+        <title>Making your first Phaser 3 Game - Part 10</title>
+        <script src="//cdn.jsdelivr.net/npm/phaser@3.11.0/dist/phaser.js"></script>
+        <style type="text/css">
+            body {
+                margin: 0;
+            }
+        </style>
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <section id='intro' class='demo'> 
+            <div class='navBar'>
+                    <p>The last twenty-five years have been a breeze. You are about to embark on a journey like never before. But first, let's reflect on your past.
+                    </p>
+            </div>
+            <a href="#history"><span></span>Scroll</a>
+        </section>
+
+        <section id="history" class='demo'>
+            <div class=spacing-top></div>
+            <h3>Hover over the images to reflect on your past.</h3>
+            <div class='container'>
+            <div class='sliding-background'>
+            <!-- <div class="imgcontainer"> -->
+                <div class="onClickTextOverImage" style="background-image:url(./images/oneconnecticut.jpg)">
+                    <!-- <a href="#humblebegginings" id='a'></a> -->
+                    <div id="humblebegginings">
+                        You survived the mean streets of Connecticut.
+                    </div>
+                </div>
+                <div class="onClickTextOverImage" style="background-image:url(./images/twoscare.jpg)">
+                    <!-- <a href="#annoying"></a> -->
+                    <div id="annoying">
+                        You were kind of a shitty kid.
+                    </div>
+                </div>
+                <div class="onClickTextOverImage" style="background-image:url(./images/threeride.jpg)">
+                    <!-- <a href="#cute"></a> -->
+                    <div id="cute">
+                        But you were cute and ready to learn the skills to move you further in the world.
+                    </div>
+                </div>
+                <div class="onClickTextOverImage" style="background-image:url(./images/fourfight.jpg)">
+                    <!-- <a href="#fight"></a> -->
+                    <div id="fight">
+                        You learned to protect yourself.
+                    </div>
+                </div>
+                <div class="onClickTextOverImage" style="background-image:url(./images/fiveschool.jpg)">
+                    <!-- <a href="#educate"></a> -->
+                    <div id="educate">
+                        You sought out knowledge.
+                    </div>
+                </div>
+                <div class="onClickTextOverImage" style="background-image:url(./images/sixfight.jpg)">
+                    <!-- <a href="#survivor"></a> -->
+                    <div id="survivor">
+                        But they all knew... never to mess with you.
+                    </div>
+                </div>
+                <div class="onClickTextOverImage" style="background-image:url(./images/sevenbarmitzvah.jpg)">
+                    <!-- <a href="#jew"></a> -->
+                    <div id="jew">
+                        You became a man.
+                    </div>
+                </div>
+                <div class="onClickTextOverImage" style="background-image:url(./images/eightangst.jpg)">
+                    <!-- <a href="#angst"></a> -->
+                    <div id="angst">
+                        Your hormones got the best of you.
+                    </div>
+                </div>
+                <div class="onClickTextOverImage" style="background-image:url(./images/nineattitude.jpg)">
+                    <!-- <a href="#attitude"></a> -->
+                    <div id="attitude">
+                        You gave your poor mother so much attitude.
+                    </div>
+                </div>
+                <div class="onClickTextOverImage" style="background-image:url(./images/tenpuberty.jpg)">
+                    <!-- <a href="#puberty"></a> -->
+                    <div id="puberty">
+                        Puberty exacted its revenge on you.
+                    </div>
+                </div>
+                <div class="onClickTextOverImage" style="background-image:url(./images/elevenhighs.jpg)">
+                    <!-- <a href="#highs"></a> -->
+                    <div id="highs">
+                        This is here to remind you how prepubesence treated you well.
+                    </div>
+                </div>
+                <div class="onClickTextOverImage" style="background-image:url(./images/twelveshit.jpg)">
+                    <!-- <a href="#shit"></a> -->
+                    <div id="shit">
+                        Remember when you had to deal with this shit?
+                    </div>
+                </div>
+                <div class="onClickTextOverImage" style="background-image:url(./images/thirteenpersevere.jpg)">
+                    <!-- <a href="#persevered"></a> -->
+                    <div id="persevered">
+                        Nevertheless, you persevered.
+                    </div>
+                </div>
+                <div class="onClickTextOverImage" style="background-image:url(./images/fourteensurvive.jpg)">
+                    <!-- <a href="#shittwo"></a> -->
+                    <div id="shittwo">
+                        LOL you never learn.
+                    </div>
+                </div>
+                <div class="onClickTextOverImage" style="background-image:url(./images/fifteenhired.jpg)">
+                    <!-- <a href="#hired"></a> -->
+                    <div id="hired">
+                        You got hired. #CONGRATS
+                    </div>
+                </div>
+                <div class="onClickTextOverImage" style="background-image:url(./images/sixteencutie.jpg)">
+                    <!-- <a href="#finallyagooddecision"></a> -->
+                    <div id="finallyagooddecision">
+                        You met this cutie. She's the best thing that ever happend to you. #CONGRATS
+                    </div>
+                </div>
+                <div class="onClickTextOverImage" style="background-image:url(./images/seventeenshade.jpg)">
+                    <!-- <a href="#shade"></a> -->
+                    <div id="shade">
+                        You learned your shade.
+                    </div>
+                </div>
+                <div class="onClickTextOverImage" style="background-image:url(./images/eighteenconquer.jpg)">
+                    <!-- <a href="#protect"></a> -->
+                    <div id="protect">
+                        You refined your fighting skills.
+                    </div>
+                </div>
+                <div class="onClickTextOverImage" style="background-image:url(./images/nineneteen.jpg)">
+                    <!-- <a href="#chess"></a> -->
+                    <div id="chess">
+                        And your mental skills.
+                    </div>
+                </div>
+                <div class="onClickTextOverImage" style="background-image:url(./images/twenty.jpg)">
+                    <!-- <a href="#umwhat"></a> -->
+                    <div id="umwhat">
+                        You did whatever this is.
+                    </div>
+                </div>
+                <div class="onClickTextOverImage" style="background-image:url(./images/twentyone.jpg)">
+                    <!-- <a href="#bird"></a> -->
+                    <div id="bird">
+                        You took a really nice photo of a bird.
+                    </div>
+                </div>
+                <div class="onClickTextOverImage" style="background-image:url(./images/twentytwo.jpg)">
+                    <!-- <a href="#egg"></a> -->
+                    <div id="egg">
+                        You discovered and furthered your love of eggs.
+                    </div>
+                </div>
+                <div class="onClickTextOverImage" style="background-image:url(./images/twentythree.jpg)">
+                    <!-- <a href="#keeper"></a> -->
+                    <div id="keeper">
+                        You somehow held on this even with your antics. #CONGRATS
+                    </div>
+                </div>
+                <div class="onClickTextOverImage" style="background-image:url(./images/twentyfour.jpg)">
+                    <!-- <a href="#beastmaster"></a> -->
+                    <div id="beastmaster">
+                        You became the ultimate beastmaster.
+                    </div>
+                </div>
+                <div class="onClickTextOverImage" style="background-image:url(./images/twentyfive.jpg)">
+                    <!-- <a href="#newworlds"></a> -->
+                    <div id="newworlds">
+                        You discovered new worlds.
+                    </div>
+                </div>
+            <!-- </div> -->
+            </div>
+            </div>
+            <div class=spacing></div>
+            <a href="#description"><span></span>Scroll</a>
+        </section>
+
+        <section id='description' class='demo'> 
+            <div class='navBar'>
+                    <p>Life has its challenges though, and you're about to embark on the greatest challenge of all. Rescue the princess, kill the enemies, collect the coins. The bombs will kill you, so don't fuck with them. Use your arrow keys to move. Are you ready? Good luck.
+                    </p>
+            </div>
+            <a href="#challenge"><span></span>Scroll</a>
+        </section>
+
+        <section id="challenge" class='demo'>
+            <div class='game'>
+                <script src="./game.js" type="text/javascript"></script>
+            </div>
+        </section>
+    </body>
+    
+</html>
